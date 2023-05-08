@@ -15,23 +15,23 @@ public class MainController {
     @GetMapping("/home")
     @ResponseStatus(HttpStatus.OK)
     public ModelAndView getHome(Model model) {
-        ModelAndView mav = new ModelAndView("/mainPage");
+        ModelAndView mav = new ModelAndView("mainPage");
         return mav;
     }
     @GetMapping("/profile")
     @ResponseStatus(HttpStatus.OK)
     public ModelAndView getProfile(Model model) {
-        return new ModelAndView("/profilePage");
+        return new ModelAndView("profilePage");
     }
     @GetMapping("/menu")
     @ResponseStatus(HttpStatus.OK)
     public ModelAndView getMenu(Model model) {
-        return new ModelAndView("/menuPage");
+        return new ModelAndView("menuPage");
     }
     @GetMapping("/roulette")
     @ResponseStatus(HttpStatus.OK)
     public ModelAndView getRoulette(Model model) {
-        return new ModelAndView("/roulettePage");
+        return new ModelAndView("roulettePage");
     }
 
 

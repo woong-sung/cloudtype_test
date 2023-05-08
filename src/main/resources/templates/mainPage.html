@@ -9,10 +9,26 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css"/>
     <link href="css/main.css" rel="stylesheet" type="text/css"/>
     <link rel="icon" href="img/favicon.ico">
-    <script>
-    location.href="/home"
-    </script>
 </head>
 <body>
+<div class="menu">
+    <nav class="clearfix">
+        <ul class="clearfix">
+            <li><a th:href="@{/home}">홈</a></li>
+            <li><a th:href="@{/profile}">프로필</a></li>
+            <li><a th:href="@{/menu}">메뉴추천</a></li>
+            <li><a th:href="@{/roulette}">룰렛</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="hero min-h-screen bg-base-100">
+    <div class="hero-content flex-col lg:flex-row-reverse">
+        <div>
+            <h1 class="text-5xl font-bold">심심해서 만드는 사이트</h1>
+            <br>
+            <img src="img/seulgi01.jpeg"/>
+        </div>
+    </div>
+</div>
 </body>
 </html>

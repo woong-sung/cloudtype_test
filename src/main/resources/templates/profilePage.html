@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조성웅 프로필</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../static/css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="css/main.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" href="../static/img/favicon.ico">
+</head>
+<body>
+<div class="menu">
+    <nav class="clearfix">
+        <ul class="clearfix">
+            <li><a th:href="@{/home}">홈</a></li>
+            <li><a th:href="@{/profile}">프로필</a></li>
+            <li><a th:href="@{/menu}">메뉴추천</a></li>
+            <li><a th:href="@{/roulette}">룰렛</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="hero min-h-screen bg-base-100">
+    <div class="hero-content flex-col lg:flex-row-reverse">
+        <div>
+            <h1 class="text-5xl font-bold" style="padding: 0 0 0 50px">조성웅</h1>
+            <br>
+            <br>
+            <br>
+            <p class="profile">Birth: 1995.12.11</p>
+            <br>
+            <p class="profile">Phone: 010-9283-1307</p>
+            <br>
+            <p class="profile">Email: cjswo138@gmail.com"</p>
+            <br>
+            <p class="profile">Github: 👉<a href="https://github.com/woong-sung">https://github.com/woong-sung</a>
+                <br>
+                <br>
+            <p class="profile">Blog: 👉<a href="https://joshbla.tistory.com/">https://joshbla.tistory.com</a>
+        </div>
+        <div>
+            <img src="https://pre-032-bucket.s3.ap-northeast-2.amazonaws.com/woongs/%EC%A6%9D%EB%AA%85%EC%82%AC%EC%A7%84.jpg"
+                 class="profile_image"/>
+        </div>
+    </div>
+</div>
+</body>
+</html>
